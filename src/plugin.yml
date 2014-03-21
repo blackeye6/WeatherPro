@@ -1,0 +1,7 @@
+name: WeatherPro
+main: me.josh.WeatherPro.Main
+version: 1.0
+author: MinecraftJoshjr
+commands:
+  wt:
+    description: Default Command For Weather Pro!
