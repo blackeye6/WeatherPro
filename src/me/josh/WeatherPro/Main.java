@@ -36,7 +36,7 @@ public class Main extends JavaPlugin {
 		    		    }
 		    	    }
 		    	}
-		    	if (args.length == 1) {
+		    
 		    		if (args[0].equalsIgnoreCase("off")) {
 		    			if (p.hasPermission("wt.admin")) {
 		    			stopScheduler(this);
@@ -44,7 +44,7 @@ public class Main extends JavaPlugin {
 		    		    }
 		    	    }
 		    	}
-		    	if (args.length == 1) {
+		    
 		    		if (args[0].equalsIgnoreCase("set")) {
 		    			if (p.hasPermission("wt.admin")) {
 		    			p.sendMessage(ChatColor.GOLD + "-=-=-=-=-=- " + prefix + ChatColor.GOLD + " -=-=-=-=-=-");
@@ -53,6 +53,8 @@ public class Main extends JavaPlugin {
 		    			p.sendMessage(ChatColor.AQUA + "/wt set sun" + ChatColor.GREEN + "    Set the weather to sun");
 		    			p.sendMessage(ChatColor.AQUA + "/wt set storm" + ChatColor.GREEN + "    Set the weather to storm");
 		    		    }
+		    		    
+		    		}
 		    	    }
 		    	}
 		    	if (args.length == 2) {
@@ -75,7 +77,7 @@ public class Main extends JavaPlugin {
 		    		    }
 		    		}
 		    	}
-		    	if (args.length == 2) {
+		    
 		    		if (args[0].equalsIgnoreCase("set")) {
 		    			if (args[1].equalsIgnoreCase("storm")) {
 		    				if (p.hasPermission("wt.admin")) {
@@ -86,7 +88,7 @@ public class Main extends JavaPlugin {
 		    		    }
 		    	    }
 		    	}
-		    	if (args.length == 2) {
+		    
 		    		if (args[0].equalsIgnoreCase("set")) {
 		    			if (args[1].equalsIgnoreCase("sun")) {
 		    				if (p.hasPermission("wt.admin")) {
@@ -95,6 +97,8 @@ public class Main extends JavaPlugin {
 		    				p.sendMessage(prefix + ChatColor.GREEN + " The weather has been changed to sunny!");
 			    	    }
 		    		} 
+		    	}
+		    	
 		    	}
 		    }
 		return true;
